@@ -2,7 +2,7 @@ package com.duckdemo.inf;
 
 public class Squack implements QuackBehavior {
 	public void quack(){
-		System.out.println("Ö¨");
+		System.out.println("ÎÒµÄ½ĞÉùÊÇÖ¨");
 	}
 
 }

@@ -3,9 +3,9 @@ package com.duckdemo.duck;
 import com.duckdemo.inf.FlyBehavior;
 import com.duckdemo.inf.QuackBehavior;
 
-public class Duck {
-	private static QuackBehavior quackbehavior;
-	private static   FlyBehavior flybehavior;
+public abstract class Duck {
+	  QuackBehavior quackbehavior;
+	  FlyBehavior flybehavior;
 	
 	public void swim(){
 		System.out.println("Œ“ª·”Œ”æ");
@@ -15,10 +15,11 @@ public class Duck {
 		
 	}
 	public void performQuack(){
-		//FlyBehavior.fly();
+		
+		quackbehavior.quack();
 	}
 	public void performFly(){
-		//QuackBehavior.fly();
+		flybehavior.fly();
 	}
 	public QuackBehavior getQuackbehavior() {
 		return quackbehavior;
